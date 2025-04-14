@@ -10,6 +10,7 @@ __pycache__/
 
 # Archivos de logs
 *.log
+logs/
 
 # Entornos virtuales
 env/
@@ -19,8 +20,34 @@ venv/
 # Archivos de configuración de VSCode
 .vscode/
 
-# Archivos de MacOS
+# Archivos de MacOS y Windows
 .DS_Store
+Thumbs.db
 
-# Archivos Word, Excel, etc. (si no querés subirlos)
+# Archivos de Word, Excel y PowerPoint
+*.doc
 *.docx
+*.dot
+*.dotx
+*.odt
+*.xls
+*.xlsx
+*.xlsm
+*.xlsb
+*.ods
+*.ppt
+*.pptx
+*.pptm
+*.pps
+*.ppsx
+*.odp
+
+# Archivos de compilación
+dist/
+build/
+
+# Archivos de entorno
+.env
+
+# Node modules (por si algún día agregás un proyecto Node.js)
+node_modules/

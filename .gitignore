@@ -1,0 +1,26 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Archivos temporales de editores
+*.swp
+*.swo
+*~
+
+# Archivos de logs
+*.log
+
+# Entornos virtuales
+env/
+venv/
+.venv/
+
+# Archivos de configuración de VSCode
+.vscode/
+
+# Archivos de MacOS
+.DS_Store
+
+# Archivos Word, Excel, etc. (si no querés subirlos)
+*.docx

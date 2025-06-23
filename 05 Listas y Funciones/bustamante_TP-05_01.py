@@ -38,7 +38,7 @@ numeros = [8,15,3,22,7]
 numeros.remove(max(numeros))
 print(numeros)
 """
-# El programa de la lista numeros utilizando la funcion remove() encuentra el numero maximo y o elimina de la lista. al final imprime a lista sin el nuero eliminado
+# El programa de la lista numeros utilizando la funcion remove() encuentra el numero maximo y lo elimina de la lista. al final imprime a lista sin el nuero eliminado
 
 """6) Crear una lista con números del 10 al 30 (incluído), haciendo saltos de 5 en 5 y mostrar por
 pantalla los dos primeros."""

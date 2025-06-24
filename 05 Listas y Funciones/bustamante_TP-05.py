@@ -4,7 +4,7 @@ pantalla el mensaje: “Hola Mundo!”. Llamar a esta función desde el
 programa principal.
 """
 def imprimir_hola_mundo():
-    return print("Hola Mundo!")
+    print("Hola Mundo!")
 """
 2. Crear una función llamada saludar_usuario(nombre) que reciba
 como parámetro un nombre y devuelva un saludo personalizado.
@@ -13,7 +13,7 @@ Llamar a esta función desde el programa
 principal solicitando el nombre al usuario.
 """
 def saludar_usuario(nombre):
-    return print(f"Hola ${nombre}!")
+    print(f"Hola {nombre}!")
 
 saludar_usuario("Marcos")
 """
@@ -22,10 +22,15 @@ edad, residencia) que reciba cuatro parámetros e imprima: “Soy
 [nombre] [apellido], tengo [edad] años y vivo en [residencia]”. 
 Pedir los datos al usuario y llamar a esta función con los valores ingresados.
 """
+nombre = input("Nombre: ")
+apellido = input("Apellido: ")
+edad = input("Edad: ")
+residencia = input("Residencia: ")
+
 def informacion_personal(nombre, apellido, edad, residencia):
     return print(f"Soy {nombre} {apellido}, tengo {edad} años y vivo en {residencia}")
 
-informacion_personal("Christian","Juarez","38","Tucumán")
+informacion_personal(nombre, apellido, edad, residencia)
 """
 4. Crear dos funciones: calcular_area_circulo(radio) que reciba el radio como parámetro y devuelva el área del círculo. 
 calcular_perimetro_circulo(radio) que reciba el radio como parámetro y devuelva el perímetro del círculo. Solicitar el radio al usuario y llamar ambas funciones para mostrar los resultados.
@@ -100,7 +105,7 @@ peso_usuario = float(input("Ingrese su peso en kilogramos"))
 altura_usuario = float(input("Ingrese su altura en metros"))
 
 def calcular_imc(peso, altura):
-    imc = peso / altura
+    imc = peso / altura** 2
     return round(imc,2)
 calcular_imc(peso_usuario,altura_usuario)
 
@@ -116,7 +121,9 @@ def celsius_a_fahrenheit(celsius):
     fahrenheit = (celsius * 9/5) + 32 
     return fahrenheit
 
-celsius_a_fahrenheit(temperatura)
+resultado = celsius_a_fahrenheit(temperatura)
+print(f"{temperatura}°C equivalen a {resultado}°F")
+
 """
 10.Crear una función llamada calcular_promedio(a, b, c) que reciba
 tres números como parámetros y devuelva el promedio de ellos.
@@ -128,7 +135,7 @@ num2 = int(input("Ingrese otro numero"))
 num3 = int(input("Ingrese el ultimo numero"))
 
 def calcular_promedio(a, b, c):
-    promedio = a / b / c
-    return print(promedio)
+    promedio = (a + b + c) / 3
+    return promedio
 
-calcular_promedio(num1,num2,num3)
+print(f"El promedio es: {calcular_promedio(num1, num2, num3)}")
